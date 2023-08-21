@@ -4,11 +4,9 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.FoodComponents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.entry.ItemEntry;
@@ -17,6 +15,8 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.VillagerProfession;
 
 public class HorseMeatMod implements ModInitializer {
     public static final String MOD_ID = "horsemeat";
@@ -53,6 +53,15 @@ public class HorseMeatMod implements ModInitializer {
                 }
             }
         }));
+
+//        Add RAW_HORSE_MEAT to BUTCHER trades
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(COOKED_HORSE_MEAT, 4), 16, 5, 0.05f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(new ItemStack(RAW_HORSE_MEAT, 7), new ItemStack(Items.EMERALD, 1), 16, 20, 0.05f));
+        });
     }
 
     public static Identifier id(String path) {
