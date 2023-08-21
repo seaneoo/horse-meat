@@ -3,6 +3,22 @@
   "id": "horsemeat",
   "version": "${version}",
   "name": "Horse Meat",
+  "description": "Horses are a source of food, too.",
+  "contact": {
+    "homepage": "https://modrinth.com/mod/horse-meat",
+    "sources": "https://github.com/seaneoo/HorseMeat/",
+    "issues": "https://github.com/seaneoo/HorseMeat/issues"
+  },
+  "authors": [
+    {
+      "name": "seano",
+      "contact": {
+        "homepage": "https://seano.dev/"
+      }
+    }
+  ],
+  "license": "GPL-3.0",
+  "icon": "logo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
