@@ -13,7 +13,7 @@ public class HorseMeatItems {
 
     public static final FoodComponent RAW_HORSE_MEAT_FOOD = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).meat().build();
     public static final FoodComponent COOKED_HORSE_MEAT_FOOD = new FoodComponent.Builder().hunger(8).saturationModifier(0.8f).meat().build();
-    public static final FoodComponent HORSE_BURGER_FOOD = new FoodComponent.Builder().hunger(10).saturationModifier(1f).build();
+    public static final FoodComponent HORSE_BURGER_FOOD = new FoodComponent.Builder().hunger(10).saturationModifier(0.8f).build();
 
     public static final Item RAW_HORSE_MEAT = new Item(new FabricItemSettings().food(RAW_HORSE_MEAT_FOOD));
     public static final Item COOKED_HORSE_MEAT = new Item(new FabricItemSettings().food(COOKED_HORSE_MEAT_FOOD));
