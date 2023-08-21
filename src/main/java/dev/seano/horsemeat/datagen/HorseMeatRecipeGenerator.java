@@ -1,6 +1,6 @@
 package dev.seano.horsemeat.datagen;
 
-import dev.seano.horsemeat.HorseMeatMod;
+import dev.seano.horsemeat.HorseMeatItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -22,8 +22,8 @@ public class HorseMeatRecipeGenerator extends FabricRecipeProvider {
         final float EXPERIENCE = 0.35f; // How much experience is gained
         final int COOKING_TIME = 200; // Num. of ticks to "cook" (200 ticks is 10 seconds)
 
-        offerFoodCookingRecipe(exporter, "furnace", RecipeSerializer.SMELTING, COOKING_TIME, HorseMeatMod.RAW_HORSE_MEAT, HorseMeatMod.COOKED_HORSE_MEAT, EXPERIENCE);
-        offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer.SMOKING, COOKING_TIME / 2, HorseMeatMod.RAW_HORSE_MEAT, HorseMeatMod.COOKED_HORSE_MEAT, EXPERIENCE);
-        offerFoodCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, COOKING_TIME / 2, HorseMeatMod.RAW_HORSE_MEAT, HorseMeatMod.COOKED_HORSE_MEAT, EXPERIENCE);
+        offerFoodCookingRecipe(exporter, "furnace", RecipeSerializer.SMELTING, COOKING_TIME, HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
+        offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer.SMOKING, COOKING_TIME / 2, HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
+        offerFoodCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, COOKING_TIME / 2, HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
     }
 }
