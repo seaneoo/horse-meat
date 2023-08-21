@@ -3,7 +3,17 @@ package dev.seano.horsemeat;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.*;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.entity.EntityType;
+import net.minecraft.item.FoodComponents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTables;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -15,6 +25,8 @@ public class HorseMeatMod implements ModInitializer {
     public static final Item RAW_HORSE_MEAT = new Item(new FabricItemSettings().food(FoodComponents.BEEF));
     public static final Item COOKED_HORSE_MEAT = new Item(new FabricItemSettings().food(FoodComponents.COOKED_BEEF));
 
+    public static final Identifier HORSE_LOOT_TABLE = EntityType.HORSE.getLootTableId();
+
     @SuppressWarnings("UnstableApiUsage")
     @Override
     public void onInitialize() {
@@ -25,6 +37,22 @@ public class HorseMeatMod implements ModInitializer {
             content.addAfter(Items.COOKED_BEEF, RAW_HORSE_MEAT);
             content.addAfter(RAW_HORSE_MEAT, COOKED_HORSE_MEAT);
         });
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (source.isBuiltin()) {
+//                Add RAW_HORSE_MEAT to HORSE loot table
+                if (HORSE_LOOT_TABLE.equals(id)) {
+                    LootPool.Builder poolBuilder = LootPool.builder().with(ItemEntry.builder(RAW_HORSE_MEAT).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3))));
+                    tableBuilder.pool(poolBuilder);
+                }
+
+//                Add RAW_HORSE_MEAT to VILLAGE_BUTCHER_CHEST loot table
+                if (LootTables.VILLAGE_BUTCHER_CHEST.equals(id)) {
+                    LootPool.Builder poolBuilder = LootPool.builder().with(ItemEntry.builder(RAW_HORSE_MEAT).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3))).weight(6));
+                    tableBuilder.pool(poolBuilder);
+                }
+            }
+        }));
     }
 
     public static Identifier id(String path) {
