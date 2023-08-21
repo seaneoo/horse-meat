@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 1.1
+
+_Released August 21, 2023_
+
+- Added a new food item: Horse Meat Burger
+  - Crafted with 1 Cooked Horse Meat and 1 Bread
+  - Restores 10 hunger and 16 saturation
+
 ## Version 1.0
 
 _Released August 21, 2023_
