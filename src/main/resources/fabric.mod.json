@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "horsemeat",
+  "version": "${version}",
+  "name": "Horse Meat",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.seano.horsemeat.HorseMeatMod"
+    ],
+    "client": [
+      "dev.seano.horsemeat.HorseMeatModClient"
+    ],
+    "fabric-datagen": [
+      "dev.seano.horsemeat.HorseMeatModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "horsemeat.mixins.json",
+    {
+      "config": "horsemeat.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
