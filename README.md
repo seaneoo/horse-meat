@@ -1,4 +1,4 @@
-# ![HorseMeat](.github/logo_banner.png)
+# ![HorseMeat](.github/horse_meat_gh_banner.png)
 
 ## About
 
