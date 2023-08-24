@@ -14,18 +14,17 @@
     <a href="https://github.com/seaneoo/HorseMeat/"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/seaneoo/HorseMeat"></a>
 </div>
 
----
-
 ## About
 
-This mod adds two new food items, **Raw Horse Meat** and **Cooked Horse Meat**. They can be obtained through multiple
-methods:
+This mod adds three new food items, Raw Horse Meat, Cooked Horse Meat, and Horse Meat Burger. The raw and cooked horse meat can be obtained by:
 
-- Killing a horse (drops 1 -3 raw horse meat).
+- Killing a horse (drops 1 - 3 raw horse meat).
 - Trading with a butcher villager (buy cooked horse meat, sell raw horse meat).
 - Looting a butcher village house (chance of 1 - 3 raw horse meat).
 
 The raw meat can be cooked just as raw beef can in vanilla. It also provides the same benefits as raw/cooked beef.
+
+The horse meat burger can be crafted with 1 cooked horse meat and 1 bread. The burger restores 10 hunger and 16 saturation.
 
 ## License
 
