@@ -1,18 +1,7 @@
 ![HorseMeat](.github/horse_meat_gh_banner.png)
 
-<div align="center">
-    <a href="https://modrinth.com/mod/horse-meat"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/O5lQhQvH?logo=modrinth&color=%231bd96a&link=https%3A%2F%2Fmodrinth.com%2Fmod%2Fhorse-meat"></a>
-    &nbsp;
-    <a href="https://legacy.curseforge.com/minecraft/mc-mods/horse-meat"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/906067?logo=curseforge&color=%23f16436"></a>
-    &nbsp;
-    <a href="https://github.com/seaneoo/HorseMeat/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/seaneoo/HorseMeat/total?logo=github&color=%23fff"></a>
-    <br/>
-    <a href="https://github.com/seaneoo/HorseMeat/"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/seaneoo/HorseMeat"></a>
-    &nbsp;
-    <a href="https://github.com/seaneoo/HorseMeat/"><img alt="GitHub issues" src="https://img.shields.io/github/issues/seaneoo/HorseMeat"></a>
-    &nbsp;    </a>
-    <a href="https://github.com/seaneoo/HorseMeat/"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/seaneoo/HorseMeat"></a>
-</div>
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/O5lQhQvH?style=for-the-badge&logo=modrinth&logoColor=%231bd96a&color=%231bd96a)](https://modrinth.com/mod/horse-meat) [![CurseForge Downloads](https://img.shields.io/curseforge/dt/906067?style=for-the-badge&logo=curseforge&logoColor=%23f16436&color=%23f16436)
+](https://www.curseforge.com/minecraft/mc-mods/horse-meat) ![GitHub all releases](https://img.shields.io/github/downloads/seaneoo/HorseMeat/total?style=for-the-badge&logo=github&logoColor=%23e6ecf4&color=%23e6ecf4) ![GitHub](https://img.shields.io/github/license/seaneoo/HorseMeat?style=for-the-badge&color=%23a1a1a1)
 
 ## About
 
