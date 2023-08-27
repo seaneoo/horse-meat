@@ -1,7 +1,7 @@
 ![HorseMeat](.github/horse_meat_gh_banner.png)
 
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/O5lQhQvH?style=for-the-badge&logo=modrinth&logoColor=%231bd96a&color=%231bd96a)](https://modrinth.com/mod/horse-meat) [![CurseForge Downloads](https://img.shields.io/curseforge/dt/906067?style=for-the-badge&logo=curseforge&logoColor=%23f16436&color=%23f16436)
-](https://www.curseforge.com/minecraft/mc-mods/horse-meat) ![GitHub all releases](https://img.shields.io/github/downloads/seaneoo/HorseMeat/total?style=for-the-badge&logo=github&logoColor=%23e6ecf4&color=%23e6ecf4) ![GitHub](https://img.shields.io/github/license/seaneoo/HorseMeat?style=for-the-badge&color=%23a1a1a1)
+](https://www.curseforge.com/minecraft/mc-mods/horse-meat) ![GitHub all releases](https://img.shields.io/github/downloads/seaneoo/horse-meat/total?style=for-the-badge&logo=github&logoColor=%23e6ecf4&color=%23e6ecf4) ![GitHub](https://img.shields.io/github/license/seaneoo/horse-meat?style=for-the-badge&color=%23a1a1a1)
 
 ## About
 
