@@ -17,7 +17,12 @@
 * Download on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/horse-meat)
 * Download on [GitHub](https://github.com/seaneoo/horse-meat/releases)
 
-## Images
+## 🗺️ Roadmap
+
+* [ ] Updated textures for Raw Horse Meat, Cooked Horse Meat, and Horse Meat Burger.
+* [ ] ????
+
+## 📸 Images
 
 ![the three new food items](https://github.com/seaneoo/horse-meat/blob/1.20/.github/horse_meat_items_screenshot.png?raw=true)
 
