@@ -7,6 +7,7 @@
 * Three new food items (**Raw Horse Meat**, **Cooked Horse Meat**, and **Horse Meat Burger**).
 * Raw horse meat is dropped (1-3 items) by horses upon death.
 * Raw and cooked meat can be found in village chests or obtained via trading with butchers.
+* Horse Meat Burger that can be crafted (shapeless) with cooked meat and bread.
 
 ## 📦 Download
 
