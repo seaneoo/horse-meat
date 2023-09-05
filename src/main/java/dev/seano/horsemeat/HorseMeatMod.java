@@ -35,23 +35,27 @@ public class HorseMeatMod implements ModInitializer {
 
     private void modifyLootTables() {
         final Identifier HORSE_LOOT_TABLE = EntityType.HORSE.getLootTableId();
+        final Identifier DONKEY_LOOT_TABLE = EntityType.DONKEY.getLootTableId();
+        final Identifier MULE_LOOT_TABLE = EntityType.MULE.getLootTableId();
 
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if (source.isBuiltin()) {
-                // Add RAW_HORSE_MEAT to HORSE loot table
-                if (HORSE_LOOT_TABLE.equals(id)) {
-                    LOGGER.info(String.format("Modifying loot table %s", HORSE_LOOT_TABLE));
-
-                    LootFunction.Builder functionbuilder = SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3));
-                    LootPool.Builder poolBuilder = LootPool.builder().with(ItemEntry.builder(HorseMeatItems.RAW_HORSE_MEAT).apply(functionbuilder));
+                // Add RAW_HORSE_MEAT to HORSE, DONKEY, MULE loot table
+                if (HORSE_LOOT_TABLE.equals(id) || DONKEY_LOOT_TABLE.equals(id) || MULE_LOOT_TABLE.equals(id)) {
+                    LootFunction.Builder functionbuilder =
+                            SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3));
+                    LootPool.Builder poolBuilder = LootPool.builder()
+                            .with(ItemEntry.builder(HorseMeatItems.RAW_HORSE_MEAT)
+                                    .apply(functionbuilder));
                     tableBuilder.pool(poolBuilder);
                 }
                 // Add RAW_HORSE_MEAT to VILLAGE_BUTCHER_CHEST loot table
                 if (LootTables.VILLAGE_BUTCHER_CHEST.equals(id)) {
-                    LOGGER.info(String.format("Modifying loot table %s", LootTables.VILLAGE_BUTCHER_CHEST));
-
-                    LootFunction.Builder functionBuilder = SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3));
-                    LootPool.Builder poolBuilder = LootPool.builder().with(ItemEntry.builder(HorseMeatItems.RAW_HORSE_MEAT).apply(functionBuilder).weight(6));
+                    LootFunction.Builder functionBuilder =
+                            SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3));
+                    LootPool.Builder poolBuilder = LootPool.builder()
+                            .with(ItemEntry.builder(HorseMeatItems.RAW_HORSE_MEAT)
+                                    .apply(functionBuilder).weight(6));
                     tableBuilder.pool(poolBuilder);
                 }
             }
@@ -59,15 +63,14 @@ public class HorseMeatMod implements ModInitializer {
     }
 
     private void modifyTrades() {
-        LOGGER.info(String.format("Modifying %s trades", VillagerProfession.BUTCHER.toString()));
-
         final int MAX_USES = 16; // The max num. of times the trade can be performed
         final float PRICE_MULTI = 0.05f; // How the cost of the trade fluctuates
 
         // Add COOKED_HORSE_MEAT to BUTCHER trades
-        // Add COOKED_HORSE_MEAT to BUTCHER trades
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 2, factories -> factories.add((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(HorseMeatItems.COOKED_HORSE_MEAT, 4), MAX_USES, 5, PRICE_MULTI)));
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 2,
+                factories -> factories.add((entity, random) -> new TradeOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(HorseMeatItems.COOKED_HORSE_MEAT, 4), MAX_USES, 5, PRICE_MULTI)));
         // Add RAW_HORSE_MEAT to BUTCHER trades
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 3, factories -> factories.add((entity, random) -> new TradeOffer(new ItemStack(HorseMeatItems.RAW_HORSE_MEAT, 7), new ItemStack(Items.EMERALD, 1), MAX_USES, 20, PRICE_MULTI)));
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 3,
+                factories -> factories.add((entity, random) -> new TradeOffer(new ItemStack(HorseMeatItems.RAW_HORSE_MEAT, 7), new ItemStack(Items.EMERALD, 1), MAX_USES, 20, PRICE_MULTI)));
     }
 }
