@@ -13,8 +13,8 @@ import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.function.Consumer;
 
-public class HorseMeatRecipeGenerator extends FabricRecipeProvider {
-	public HorseMeatRecipeGenerator(FabricDataOutput output) {
+public class HorseMeatRecipeProvider extends FabricRecipeProvider {
+	public HorseMeatRecipeProvider(FabricDataOutput output) {
 		super(output);
 	}
 
