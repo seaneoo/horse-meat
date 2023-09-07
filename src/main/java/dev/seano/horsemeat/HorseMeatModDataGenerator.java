@@ -1,5 +1,6 @@
 package dev.seano.horsemeat;
 
+import dev.seano.horsemeat.datagen.HorseMeatEnglishLanguageProvider;
 import dev.seano.horsemeat.datagen.HorseMeatRecipeProvider;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -10,5 +11,6 @@ public class HorseMeatModDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(HorseMeatRecipeProvider::new);
+		pack.addProvider(HorseMeatEnglishLanguageProvider::new);
 	}
 }
