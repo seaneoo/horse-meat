@@ -1,6 +1,6 @@
 [![HorseMeat](https://github.com/seaneoo/horse-meat/raw/1.20/.github/horse_meat_gh_banner.png)](https://github.com/seaneoo/horse-meat)
 
-🐎🥩 *Horses deserve to be eaten, too.¹*
+🐎🥩 *Horses deserve to be eaten too.¹*
 
 ## 🕹️ Features
 
@@ -11,16 +11,20 @@
 
 ## 📦 Download
 
-⚠️ Fabric API is **required**. That can be downloaded here: https://modrinth.com/mod/fabric-api.
+This mod is compatible with [Fabric](https://fabricmc.net/) and [Quilt](https://quiltmc.org/en/).
 
-* Download on [Modrinth](https://modrinth.com/mod/horse-meat)
-* Download on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/horse-meat)
-* Download on [GitHub](https://github.com/seaneoo/horse-meat/releases)
+⚠️ [Fabric API](https://modrinth.com/mod/fabric-api)/[Quilted Fabric API](https://modrinth.com/mod/qsl) is **required**.
+
+Horse Meat is officially available at these locations:
+
+* [Modrinth](https://modrinth.com/mod/horse-meat) (recommended)
+* [CurseForge](https://www.curseforge.com/minecraft/mc-mods/horse-meat)
+* [GitHub](https://github.com/seaneoo/horse-meat/releases)
 
 ## 🗺️ Roadmap
 
-* [ ] Updated textures for Raw Horse Meat, Cooked Horse Meat, and Horse Meat Burger.
-* [ ] ????
+* [ ] Raw and cooked llama meat (v1.3)
+* [ ] Improved textures for all items (TBD)
 
 ## 📸 Images
 
