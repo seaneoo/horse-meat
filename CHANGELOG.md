@@ -1,10 +1,17 @@
 # Changelog
 
+## Version 1.3
+
+_Released September 7, 2023_
+
+- Added two new food items: Raw Llama Meat and Cooked Llama Meat
+  - Function identical to the respective horse meats
+
 ## Version 1.2
 
 _Released September 5, 2023_
 
-- Added Raw Horse Meat to Donkey and Mule drops.
+- Added Raw Horse Meat to Donkey and Mule drops
 
 ## Version 1.1
 
@@ -19,7 +26,7 @@ _Released August 21, 2023_
 _Released August 21, 2023_
 
 - Added two new food items: Raw Horse Meat and Cooked Horse Meat
-    - Raw Horse Meat can be cooked into Cooked Horse Meat in a furnance, smoker, or campfire.
+    - Raw Horse Meat can be cooked into Cooked Horse Meat in a furnace, smoker, or campfire.
     - Raw Horse Meat restores 3 hunger and 1.8 saturation
     - Cooked Horse Meat restores 8 hunger and 12.8 saturation
 - Horses now drop 1 - 3 Raw Horse Meat upon death
