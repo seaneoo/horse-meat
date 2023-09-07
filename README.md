@@ -23,7 +23,8 @@ Horse Meat is officially available at these locations:
 
 ## 🗺️ Roadmap
 
-* [ ] Raw and cooked llama meat (v1.3)
+* [X] Raw and cooked llama meat (v1.3)
+* [ ] Config to toggle features on/off (v1.4)
 * [ ] Improved textures for all items (TBD)
 
 ## 📸 Images
