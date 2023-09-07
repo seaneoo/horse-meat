@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "horsemeat:raw_llama_meat"
+  },
+  "result": "horsemeat:cooked_llama_meat"
+}

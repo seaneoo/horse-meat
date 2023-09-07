@@ -28,12 +28,21 @@ public class HorseMeatRecipeGenerator extends FabricRecipeProvider {
 		final float EXPERIENCE = 0.35f; // How much experience is gained
 		final int COOKING_TIME = 200; // Num. of ticks to "cook" (200 ticks is 10 seconds)
 
+		// Add furnace/smoker/campfire recipes for horse meat
 		offerFoodCookingRecipe(exporter, "furnace", RecipeSerializer.SMELTING, COOKING_TIME,
 				HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
 		offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer.SMOKING, COOKING_TIME / 2,
 				HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
 		offerFoodCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, COOKING_TIME / 2,
 				HorseMeatItems.RAW_HORSE_MEAT, HorseMeatItems.COOKED_HORSE_MEAT, EXPERIENCE);
+
+		// Add furnace/smoker/campfire recipes for llama meat
+		offerFoodCookingRecipe(exporter, "furnace", RecipeSerializer.SMELTING, COOKING_TIME,
+				HorseMeatItems.RAW_LLAMA_MEAT, HorseMeatItems.COOKED_LLAMA_MEAT, EXPERIENCE);
+		offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer.SMOKING, COOKING_TIME / 2,
+				HorseMeatItems.RAW_LLAMA_MEAT, HorseMeatItems.COOKED_LLAMA_MEAT, EXPERIENCE);
+		offerFoodCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, COOKING_TIME / 2,
+				HorseMeatItems.RAW_LLAMA_MEAT, HorseMeatItems.COOKED_LLAMA_MEAT, EXPERIENCE);
 	}
 
 	private void generateCraftingRecipes(Consumer<RecipeJsonProvider> exporter) {
