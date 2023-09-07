@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "horsemeat:item/raw_horse_meat"
+    "layer0": "minecraft:item/beef"
   }
 }

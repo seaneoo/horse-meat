@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "horsemeat:item/cooked_llama_meat"
+    "layer0": "minecraft:item/cooked_beef"
   }
 }
