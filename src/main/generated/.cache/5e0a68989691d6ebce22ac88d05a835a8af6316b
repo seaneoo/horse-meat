@@ -1,6 +1,6 @@
-// 1.20.2 Release Candidate 2	2023-09-18T09:10:04.9411177	Horse Meat/Model Definitions
+// 1.20.2 Release Candidate 2	2023-09-18T09:47:22.4262459	Horse Meat/Model Definitions
 afae5b2e4da7033f0e1283c87ff9c75088f58081 assets\horsemeat\models\item\horse_burger.json
-07502ca79d239bad03b0d8ec7ac048c1dd716ebe assets\horsemeat\models\item\raw_llama_meat.json
 3cdc3c09e82694c4f48aaa93cf792b02320a2aa6 assets\horsemeat\models\item\cooked_horse_meat.json
+07502ca79d239bad03b0d8ec7ac048c1dd716ebe assets\horsemeat\models\item\raw_llama_meat.json
 3cdc3c09e82694c4f48aaa93cf792b02320a2aa6 assets\horsemeat\models\item\cooked_llama_meat.json
 07502ca79d239bad03b0d8ec7ac048c1dd716ebe assets\horsemeat\models\item\raw_horse_meat.json
