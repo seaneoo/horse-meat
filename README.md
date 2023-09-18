@@ -4,10 +4,12 @@
 
 ## 🕹️ Features
 
-* Three new food items (**Raw Horse Meat**, **Cooked Horse Meat**, and **Horse Meat Burger**).
-* Raw horse meat is dropped (1-3 items) by horses upon death.
+* Five new food items (**Raw Horse Meat**, **Cooked Horse Meat**, **Raw Llama Meat**, **Cooked Llama Meat**, and **Horse
+  Meat Burger**).
+* Raw meat is dropped (1-3 items) by horses or llamas (respectively) upon death.
 * Raw and cooked meat can be found in village chests or obtained via trading with butchers.
 * Horse Meat Burger that can be crafted (shapeless) with cooked meat and bread.
+* Config file to toggle features on and off (see [#Config](#-config)).
 
 ## 📦 Download
 
@@ -21,10 +23,20 @@ Horse Meat is officially available at these locations:
 * [CurseForge](https://www.curseforge.com/minecraft/mc-mods/horse-meat)
 * [GitHub](https://github.com/seaneoo/horse-meat/releases)
 
+## ⚙️ Config
+
+There is a config file that allows you to toggle certain features on and off.
+
+Presently, you can:
+
+* Individually toggle raw meat being dropped.
+* Individually toggle meat being found in butcher chests.
+* Individually toggle meat being traded for by butcher villagers.
+
 ## 🗺️ Roadmap
 
 * [X] Raw and cooked llama meat (v1.3)
-* [ ] Config to toggle features on/off (v1.4)
+* [X] Config to toggle features on/off (v1.4)
 * [ ] Improved textures for all items (TBD)
 
 ## 📸 Images
