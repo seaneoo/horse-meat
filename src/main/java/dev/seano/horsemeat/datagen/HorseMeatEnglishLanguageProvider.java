@@ -17,5 +17,6 @@ public class HorseMeatEnglishLanguageProvider extends FabricLanguageProvider {
 		translationBuilder.add(HorseMeatItems.RAW_LLAMA_MEAT, "Raw Llama Meat");
 		translationBuilder.add(HorseMeatItems.COOKED_LLAMA_MEAT, "Cooked Llama Meat");
 		translationBuilder.add(HorseMeatItems.HORSE_BURGER, "Horse Meat Burger");
+		translationBuilder.add("itemGroup.horsemeat.group", "Horse Meat");
 	}
 }
