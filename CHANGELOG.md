@@ -1,11 +1,22 @@
 # Changelog
 
+## Version 1.4
+
+_Released September 18, 2023_
+
+- Build with Minecraft 1.20.2-rc2
+    - Still compatible with 1.20, 1.20.1, and 1.20.2
+- Added custom item group
+- Added config
+    - Can be modified through Mod Menu or the JSON file
+    - Options to toggle individual features for both horse and llama meat
+
 ## Version 1.3
 
 _Released September 7, 2023_
 
 - Added two new food items: Raw Llama Meat and Cooked Llama Meat
-  - Function identical to the respective horse meats
+    - Function identical to the respective horse meats
 
 ## Version 1.2
 
