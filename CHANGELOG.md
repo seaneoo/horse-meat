@@ -7,7 +7,7 @@ _Released September 18, 2023_
 - Build with Minecraft 1.20.2-rc2
     - Still compatible with 1.20, 1.20.1, and 1.20.2
 - Added custom item group
-- Added config
+- Added config (⚠️ You must exit your world for changes to take effect)
     - Can be modified through Mod Menu or the JSON file
     - Options to toggle individual features for both horse and llama meat
 
